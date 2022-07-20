@@ -18,6 +18,7 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.SERVICE_PRINCIPAL_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.TENANT_ID }}
+      ADMIN_USER_MAIL: ${{ secrets.ADMIN_USER_MAIL }}
     steps:
 
       - uses: actions/checkout@v2
@@ -38,4 +39,3 @@ jobs:
           -var="tenant_id=${ARM_TENANT_ID}"
           -var="subscription_id=${ARM_SUBSCRIPTION_ID}"
           -var="admin_user=${ADMIN_USER_MAIL}
-          -var="storage_account=${STORAGE_ACCOUNT_FOR_STATE_FILE}

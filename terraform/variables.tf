@@ -27,8 +27,3 @@ variable "subscription_id" {
 variable "admin_user" {
   type = string
 }
-
-variable "storage_account" {
-  type = string
-}
-
