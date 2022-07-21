@@ -7,9 +7,6 @@ data "databricks_spark_version" "latest_lts" {
   depends_on        = [azurerm_databricks_workspace.db_workspace]
 }
 
-data "databricks_clusters" "all" {
-}
-
 resource "databricks_cluster" "shared_autoscaling" {
   cluster_name            = "${var.prefix}-cluster"
   spark_version           = data.databricks_spark_version.latest_lts.id
