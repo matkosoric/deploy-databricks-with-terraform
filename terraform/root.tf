@@ -18,7 +18,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "DEPLOY_DATABRICKS"
     storage_account_name = "deploydatabricks"
-    container_name       = "tfstate"
+    container_name       = "deploy-databricks-terraform-state"
     key                  = "terraform.tfstate"
   }
 
