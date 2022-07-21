@@ -39,3 +39,5 @@ jobs:
           -var="tenant_id=${ARM_TENANT_ID}"
           -var="subscription_id=${ARM_SUBSCRIPTION_ID}"
           -var="admin_user=${ADMIN_USER_MAIL}"
+
+          terraform output
