@@ -29,6 +29,8 @@ jobs:
         shell: bash
         run: >-
 
+          export TF_LOG=TRACE
+
           cd terraform
 
           terraform init
