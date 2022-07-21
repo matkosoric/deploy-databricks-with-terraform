@@ -35,6 +35,8 @@ jobs:
 
           terraform init
 
+          terraform validate
+
           terraform apply -auto-approve
           -var="client_id=${ARM_CLIENT_ID}"
           -var="client_secret=${ARM_CLIENT_SECRET}"
