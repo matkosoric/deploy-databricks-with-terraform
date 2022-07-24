@@ -41,3 +41,31 @@ jobs:
           -var="admin_user=${ADMIN_USER_MAIL}"
 
           terraform output
+
+
+  cleanup:
+    if: false
+    name: Infrastructure cleanup
+    runs-on: ubuntu-latest
+    environment: CLEANUP
+    env:
+      ARM_CLIENT_ID: ${{ secrets.SERVICE_PRINCIPAL_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.SERVICE_PRINCIPAL_SECRET }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
+      ARM_TENANT_ID: ${{ secrets.TENANT_ID }}
+      ADMIN_USER_MAIL: ${{ secrets.ADMIN_USER_MAIL }}
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - uses: hashicorp/setup-terraform@v1
+
+      - name: Decomissioning resources
+        shell: bash
+        run: >-
+
+          cd terraform
+
+          terraform init
+
+          terraform destroy
