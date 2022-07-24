@@ -3,6 +3,8 @@
 This is a minimal example for deploying Databricks service on Azure.
 The smallest number of nodes in the cluster will be 1, and maximum 5.
 Node type will be the smallest one, and Spark version the latest one with long term support.
+You will be able to log in automatically with your SSO user.
+Auto-termination is set to 20 minutes.
 
 Several manual steps are necessary to configure Terraform with Azure Service Principal.
 
