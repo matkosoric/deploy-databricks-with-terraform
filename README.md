@@ -16,7 +16,8 @@ Several manual steps are necessary to configure Terraform with Azure Service Pri
 
 5. Allow Contributor access to Service Principal for the resource group
 6. Allow Contributor access to Service Principal for storage account
-7. Save authentication credentials in GitHub secrets,
+7. Create environment CLEAN_UP, and add yourself as reviewer to have manual approval for decommissioning resources   
+8. Save authentication credentials in GitHub secrets,
    along with tenant ID and administrator mail that will enable you to log in automatically:
 
    * SERVICE_PRINCIPAL_ID
@@ -45,3 +46,4 @@ Several manual steps are necessary to configure Terraform with Azure Service Pri
 
 ![GitHub secrets](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/github-secrets.PNG?raw=true "")
 
+![Manual approval](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/manual_approval.PNG?raw=true "")
