@@ -27,7 +27,7 @@ variable "subscription_id" {
 }
 
 variable "tags" {
-  type = map
+  type = map(string)
 }
 
 variable "admin_user" {

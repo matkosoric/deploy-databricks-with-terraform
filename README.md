@@ -1,6 +1,9 @@
 # Deploy Databricks on Azure with Terraform - minimal setup
 
 This is a minimal example for deploying Databricks cluster on Azure.
+Minimal number of nodes will be 1, and maximum 5.
+Node type will be the smallest one, and Spark version the latest one with long term support.
+
 Several manual steps are necessary to configure Terraform with Azure Service Principal.
 
 1. Create resource group **DEPLOY_DATABRICKS**
