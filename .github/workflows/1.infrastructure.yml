@@ -45,6 +45,7 @@ jobs:
 
   cleanup:
     if: false
+    needs: infra
     name: Infrastructure cleanup
     runs-on: ubuntu-latest
     environment: CLEANUP
