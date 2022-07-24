@@ -45,17 +45,17 @@ Several manual steps are necessary to configure Terraform with Azure Service Pri
 
 ### Screenshots
 
-1. Databricks GUI
+1. Databricks GUI  
 ![Databricks GUI](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/databricks-gui.PNG?raw=true "")
 
-2. Databricks workspace tags
+2. Databricks workspace tags  
 ![Databricks tags](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/databricks-tags.PNG?raw=true "")
    
-3. GitHub secrets
+3. GitHub secrets  
 ![GitHub secrets](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/github-secrets.PNG?raw=true "")
 
-4. Manual approval setup
+4. Manual approval setup  
 ![Manual approval](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/manual_approval.PNG?raw=true "")
 
-5. Provisioning and decommissioning jobs
+5. Provisioning and decommissioning jobs  
 ![GitHub jobs](https://raw.githubusercontent.com/matkosoric/deploy-databricks-with-terraform/main/docs/github-jobs.PNG?raw=true "")
