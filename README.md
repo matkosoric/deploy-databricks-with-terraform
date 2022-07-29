@@ -14,7 +14,7 @@ Several manual steps are necessary to configure Terraform with Azure Service Pri
 4. Create Service Principal that will be used for Terraform operations 
 
 ```
-   az ad sp create-for-rbac --name "http://sentinel-2-app.<YOUR_DOMAIN>.onmicrosoft.com" --role contributor \
+   az ad sp create-for-rbac --name "http://deploy-databricks-service-principal.<YOUR_DOMAIN>.onmicrosoft.com" --role contributor \
    --scopes /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP> \
    --sdk-auth
 ```
